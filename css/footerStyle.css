@@ -1,0 +1,44 @@
+footer{
+    width: 100%;
+    padding: 60px 0;
+    background-color: #222325;
+}
+
+#footerContainer{
+    padding: 0 15px;
+    position: relative;
+}
+
+#footerContainer div img{
+    padding:  0 0 0 50px;
+    float: right;
+    height: 100px;
+    filter: invert(67%) sepia(1%) saturate(0%) hue-rotate(163deg) brightness(91%) contrast(94%);
+}
+
+#footerContainer ul{
+    padding-bottom: 20px;
+}
+
+#footerContainer ul a{
+    margin-right: 20px;
+    font-size: 14px;
+    color: #999;
+    cursor: pointer;
+}
+
+#footerContainer p{
+    font-size: 14px;
+    color: #616161;
+    line-height: 1.85;
+}
+
+#footerContainer p .divider{
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 14px;
+    margin: 0 10px;
+    background-color: rgba(255,255,255,.14);
+    vertical-align: -1px;
+}

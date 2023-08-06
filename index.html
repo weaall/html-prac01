@@ -1,22 +1,81 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="./css/headerStyle.css">
 
-    </head>
-    <body>
-        <header>
-            <nav>
-                <div>
-                    list1
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./css/headerStyle.css">
+    <link rel="stylesheet" type="text/css" href="./css/mainStyle.css">
+    <link rel="stylesheet" type="text/css" href="./css/footerStyle.css">
+
+</head>
+
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false" onkeydown="return false">
+    <header>
+        <div id="mainImage">
+            <nav id="navMain">
+                <div id="mainLogo">
+                    <img src="./Weaall.png">
                 </div>
-                <div>
-                    list2
-                </div>
-                <div>
-                    list3
-                </div>
+                <button id="navDrawer">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </nav>
-        </header>
-    </body>
+            <div id="captionContainer">
+                <div id="caption">
+                    <h2>소개</h2>
+                    <p>상세소개</p>
+                </div>
+            </div>
+            <section id="navSub">
+                <a id="homeBtn">Home
+                </a>
+                <a id="mainMenuBtn">소개
+                </a>
+                <a id="subMenuBtn">상세소개
+                </a>
+            </section>
+        </div>
+        <a id="upBtn">▲
+        </a>
+    </header>
+    <main>
+    </main>
+    <footer>
+        <div id="footerContainer">
+            <div>
+                <img src="./Weaall.png">
+            </div>
+            <ul>
+                <a>
+                    Direct1
+                </a>
+                <a>
+                    Direct2
+                </a>
+                <a>
+                    Direct3
+                </a>
+                <a>
+                    Direct4
+                </a>
+                <a>
+                    Direct5
+                </a>
+            </ul>
+            <p>Weaall Project.
+                <em class="divider">
+                </em>위동현
+                <em class="divider">
+                </em>weaall@naver.com
+                <em class="divider">
+                </em>
+                경기도 안산시 단원구
+                <br>© 2023 Weaall All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+
 </html>

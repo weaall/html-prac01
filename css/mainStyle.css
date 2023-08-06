@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    background-color: white;
+    font-family: 'Noto Sans KR',sans-serif;
+    letter-spacing: -0.5px;
+    overflow-x: hidden;
+    position: relative;
+}
+
+button{
+    font: inherit;
+    vertical-align: middle;
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+ul, ol, dl, dt, dd, p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+main{
+    height: 2000px;
+}
+
+#upBtn{
+    position: fixed;
+    display: block;
+    bottom: 50px;
+    right: 50px;
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 55px;
+    border-radius: 50%;
+    background-color: #4263eb;
+    cursor: pointer;
+    z-index: 1;
+    transition: background-color .5s, opacity .5s, right .5s;
+}
