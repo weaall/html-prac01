@@ -4,7 +4,8 @@ body{
     font-family: 'Noto Sans KR',sans-serif;
     letter-spacing: -0.5px;
     overflow-x: hidden;
-    position: relative;
+    color: white;
+   
 }
 
 button{
@@ -23,7 +24,7 @@ ul, ol, dl, dt, dd, p, h1, h2, h3, h4, h5, h6 {
 }
 
 main{
-    height: 2000px;
+    height: 1000px;
 }
 
 #upBtn{

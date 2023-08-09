@@ -1,3 +1,117 @@
+#navDrawer{
+    padding-top: 150px;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: -400px;
+    width: 400px;
+    background-color: black;
+    z-index: 2;
+    transition: opacity 1s, right .5s;
+    opacity: 0;
+}
+
+@keyframes opacity{
+    0%{opacity: 0;}
+    50%{opacity: 0.5;}
+    100%{opacity: 1;}
+}
+
+#navDrawerExit{
+    border: none;
+    background-color: transparent;
+    font-size: 40px;
+    position: absolute;
+    top: 50px;
+    right: 42px;
+    color: white;
+
+}
+
+#navMenu{
+    padding: 0 60px;
+    max-height: calc(100% - 160px);
+    overflow-y: auto;
+}
+
+#navDrawer #navMenu ul li{
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    color: grey;
+    transition: color .25s;
+    cursor: pointer;
+}
+
+#navDrawer #navMenu ul li a span{
+    position: relative;
+    z-index: 5;
+    display: inline-block;
+}
+
+#navDrawer #navMenu ul li a::after{
+    content: '∨';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-family: 'xeicon';
+    font-size: 17px;
+    color: #aaa;
+    margin-top: -12px;
+    transition: transform .25s ease;
+}
+
+
+#navDrawer #navMenu ul #direct1 a{
+    color: white;
+}
+
+#navDrawer #navMenu ul #direct1 a span::before{
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 6px;
+    left: 0;
+    height: 6px;
+    background-color: #6693fb;
+    transition: width 0.25s ease-in-out;
+    z-index: -1;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#navDrawer #navMenu ul li a span::before{
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 6px;
+    left: 0;
+    height: 6px;
+    background-color: #6693fb;
+    transition: width .25s ease-in-out;
+    z-index: -1;
+    width: 0%;
+    box-sizing: border-box;
+}
+
+#navDrawer #navMenu ul li a:hover{
+    color: white;
+    transition: color .25s;
+}
+
+#navDrawer #navMenu ul li a:hover span::before{
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 6px;
+    left: 0;
+    height: 6px;
+    background-color: #6693fb;
+    transition: width .25s;
+    z-index: -1;
+    width: 100%;
+}
+
 #navMain{
     height: 100px;
     width: 100%;
@@ -11,11 +125,11 @@
 
 #mainLogo img{
     cursor: pointer;
-    height: 70px;
+    height: 60px;
     padding-top: 10px;
 }
 
-#navDrawer{
+#navDrawerBtn{
     position: absolute;
     top: 50%;
     right: 15px;
@@ -26,7 +140,7 @@
     outline: 0;
 }
 
-#navDrawer span{
+#navDrawerBtn span{
     position: absolute;
     display: block;
     left: 50%;
@@ -36,20 +150,20 @@
     background-color: #fff;
     transition: all .3s;
 }
-#navDrawer span:first-child{
+#navDrawerBtn span:first-child{
     top:14px;
 }
-#navDrawer span:nth-child(2){
+#navDrawerBtn span:nth-child(2){
     top:22px;
 }
-#navDrawer span:last-child{
+#navDrawerBtn span:last-child{
     top:30px;
 }
 
-#navDrawer:hover span:first-child{
+#navDrawerBtn:hover span:first-child{
     top:10px;
 }
-#navDrawer:hover span:last-child{
+#navDrawerBtn:hover span:last-child{
     top:34px;
 }
 

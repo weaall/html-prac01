@@ -6,17 +6,52 @@
     <link rel="stylesheet" type="text/css" href="./css/headerStyle.css">
     <link rel="stylesheet" type="text/css" href="./css/mainStyle.css">
     <link rel="stylesheet" type="text/css" href="./css/footerStyle.css">
-
 </head>
 
-<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false" onkeydown="return false">
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false" >
     <header>
+        <div id="navDrawer">
+            <button id="navDrawerExit">X
+            </button>
+            <div id="navMenu">
+                <ul>
+                    <li id="direct1">
+                        <a>
+                            <span>
+                                Direct1
+                            </span>
+                        </a>
+                    </li>
+                    <li id="direct2">
+                        <a>
+                            <span>
+                                Direct2
+                            </span>
+                        </a>
+                    </li>
+                    <li id="direct3">
+                        <a>
+                            <span>
+                                Direct3
+                            </span>
+                        </a>
+                    </li>
+                    <li id="direct4">
+                        <a>
+                            <span>
+                                Direct4
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <div id="mainImage">
             <nav id="navMain">
                 <div id="mainLogo">
                     <img src="./Weaall.png">
                 </div>
-                <button id="navDrawer">
+                <button id="navDrawerBtn">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -72,10 +107,11 @@
                 <em class="divider">
                 </em>
                 경기도 안산시 단원구
-                <br>© 2023 Weaall All Rights Reserved.
+                <br>Copyright © Weaall All rights reserved.
             </p>
         </div>
     </footer>
+    <script src="./js/mainScript.js"></script>
 </body>
 
 </html>
